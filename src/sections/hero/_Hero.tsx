@@ -36,7 +36,7 @@ const Hero = ({ className }: ClassNameInterface) => {
             return 'idle';
         }
       });
-    }, 1500);
+    }, 1900);
     return () => clearInterval(repeater.current);
   }, []);
 
