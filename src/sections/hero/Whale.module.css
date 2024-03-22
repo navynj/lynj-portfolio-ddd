@@ -1,0 +1,306 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 10em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.whale {
+  width: 15em;
+  position: relative;
+  animation: 3s whale-swim ease-in-out infinite;
+  transform-origin: bottom right;
+}
+
+.fin,
+.body,
+.tail {
+  overflow: hidden;
+}
+
+.parts {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: inherit;
+}
+
+.stroke,
+.bg {
+  position: absolute;
+}
+
+.stroke {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 0 0 4px #313338 inset;
+}
+
+.define .stroke {
+  box-shadow: 0 0 0 0 #313338 inset;
+}
+
+.design .bg {
+  transform: translateY(100%);
+}
+
+.define .bg {
+  background: transparent;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #313338;
+  transform: scale(2);
+}
+
+/* body */
+.bodyContainer {
+  position: relative;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.body {
+  position: absolute;
+  width: 13em;
+  height: 10em;
+  border-radius: 1.5em 1.5em 5.5em 5.5em;
+}
+
+.frontBody {
+  opacity: 0.5;
+  right: 0;
+  animation: 3s turn-swim ease-in-out infinite;
+}
+
+.backBody {
+  width: 15em;
+  height: 10.75em;
+  top: -0.675em;
+  right: 0;
+  opacity: 0.5;
+  animation: 3s turn-swim 0.5s ease-in-out infinite;
+}
+
+/* fins */
+.finContainer {
+  animation: 3s turn-swim 0.15s ease-in-out infinite;
+}
+
+.fin {
+  position: absolute;
+  bottom: 0;
+  border-radius: 1.5em 4.5em 4.5em 1.5em;
+}
+
+.backFin {
+  width: 4.25em;
+  height: 5.75em;
+  top: 7em;
+  left: 2.5em;
+  transform: rotate(5deg);
+  opacity: 0.1;
+  animation: 3s back-fin-swim ease-in-out infinite;
+}
+
+.frontFin {
+  width: 5.5em;
+  height: 7.5em;
+  top: 5.25em;
+  left: 8em;
+  opacity: 0.7;
+  animation: 3s front-fin-swim ease-in-out infinite;
+  /* transform-origin: top left; */
+}
+
+/* tails */
+.tailContainer {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  left: 15em;
+  animation: 3s tail-swim ease-in-out infinite;
+  animation: 3s turn-swim 0.2s ease-in-out infinite;
+}
+
+.tail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.5em 4.5em 4.5em 1.5em;
+}
+
+.backTail {
+  width: 4em;
+  height: 6.5em;
+  transform-origin: bottom left;
+  opacity: 0.5;
+  animation: 3s back-tail-swim ease-in-out infinite;
+}
+
+.frontTail {
+  width: 4em;
+  height: 7em;
+  transform-origin: bottom left;
+  opacity: 0.6;
+  animation: 3s front-tail-swim ease-in-out infinite;
+}
+
+/* design */
+.design.whale,
+.design .backBody,
+.design .frontBody,
+.design .backFin,
+.design .frontFin,
+.design .backTail,
+.design .frontTail,
+.design .finContainer,
+.design .tailContainer {
+  animation-play-state: paused;
+}
+
+/* idle, define */
+.idle.whale,
+.idle .backBody,
+.idle .frontBody,
+.idle .backFin,
+.idle .frontFin,
+.idle .backTail,
+.idle .frontTail,
+.idle .finContainer,
+.idle .tailContainer,
+.define.whale,
+.define .backBody,
+.define .frontBody,
+.define .backFin,
+.define .frontFin,
+.define .backTail,
+.define .frontTail,
+.define .finContainer,
+.define .tailContainer {
+  animation-play-state: paused;
+}
+
+/* develop */
+.develop.whale,
+.develop .backBody,
+.develop .frontBody,
+.develop .backFin,
+.develop .frontFin,
+.develop .backTail,
+.develop .frontTail,
+.develop .finContainer,
+.develop .tailContainer {
+  animation-play-state: running;
+}
+
+@keyframes whale-swim {
+  0% {
+    transform: translate(-4em, 1em) rotate(15deg);
+  }
+  50% {
+    transform: translateX(-4em) rotate(20deg);
+  }
+  100% {
+    transform: translate(-4em, 1em) rotate(15deg);
+  }
+}
+
+@keyframes turn-swim {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.9);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes tail-swim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes front-tail-swim {
+  0% {
+    transform: rotate(75deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(80deg) scaleX(-1);
+  }
+  60% {
+    transform: rotate(75deg) scaleX(-1);
+  }
+  70% {
+    transform: rotate(80deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(75deg) scaleX(-1);
+  }
+}
+
+@keyframes back-tail-swim {
+  0% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  6% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes front-fin-swim {
+  0% {
+    transform: rotate(-40deg);
+  }
+  45% {
+    transform: translate(0.5em, -0.5em) rotate(-55deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes back-fin-swim {
+  20% {
+    transform: rotate(5deg);
+  }
+  55% {
+    transform: translate(1em, 0.5em) rotate(-10deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes drawBorder {
+  0% {
+    clip-path: rect(0 0 0 0);
+  }
+
+  100$ {
+    clip-path: rect(100% 100% 100% 100%);
+  }
+}
