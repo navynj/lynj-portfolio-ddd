@@ -63,13 +63,13 @@ const Frame = ({
           </span>
           <div className="flex gap-sm items-start mb-1.5">
             <h6 className="text-sm w-3rem shrink-0">Link</h6>
-            <a href={link} className="text-sm lt-sm:text-xs break-all">
+            <a href={link} target="_blank" className="text-sm lt-sm:text-xs break-all">
               {link}
             </a>
           </div>
           <div className="flex gap-sm items-start mb-2xl lt-sm:mb-xs">
             <h6 className="text-sm w-3rem shrink-0">GitHub</h6>
-            <a href={github} className="text-sm lt-sm:text-xs break-all">
+            <a href={github} target="_blank" className="text-sm lt-sm:text-xs break-all">
               {github}
             </a>
           </div>
