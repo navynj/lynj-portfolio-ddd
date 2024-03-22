@@ -27,8 +27,3 @@ button {
   border: none;
   cursor: pointer;
 }
-
-@font-face {
-  font-family: lot;
-  src: url('/font/LOT.otf');
-}

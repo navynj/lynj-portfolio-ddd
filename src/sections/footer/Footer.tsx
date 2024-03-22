@@ -1,7 +1,7 @@
-import Github from '@/assets/svg/github.svg?react';
-import Mail from '@/assets/svg/mail.svg?react';
-import Phone from '@/assets/svg/phone.svg?react';
-import Twitter from '@/assets/svg/twitter.svg?react';
+import Github from '../../assets/svg/github.svg?react';
+import Mail from '../../assets/svg/mail.svg?react';
+import Phone from '../../assets/svg/phone.svg?react';
+import Twitter from '../../assets/svg/twitter.svg?react';
 
 const data = [
   {
