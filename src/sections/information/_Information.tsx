@@ -53,7 +53,7 @@ const Information = ({ className }: ClassNameInterface) => {
               </ul>
             </li>
             <li>
-              <p className="text-sm lt-sm:text-xs font-extrabold">2023. 6 ~ 2023. 12</p>
+              <p className="text-sm lt-sm:text-xs font-extrabold">2023. 9 ~ 2023. 12</p>
               <h5 className="text-lg lt-sm:text-1rem font-extrabold mb-2">
                 국립암센터 산학협력단 연구원
               </h5>
