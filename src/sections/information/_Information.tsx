@@ -94,7 +94,7 @@ const Information = ({ className }: ClassNameInterface) => {
           <ul className="flex flex-col lt-sm:gap-4">
             <li className="flex gap-20 mb-10 lt-sm:flex-col lt-sm:gap-4">
               <div>
-                <p className="text-sm lt-sm:text-xs font-extrabold">2018. 3 ~ 2021. 8</p>
+                <p className="text-sm lt-sm:text-xs font-extrabold">2018. 3 ~ 2023. 8</p>
                 <h4 className="text-lg lt-sm:text-1rem font-extrabold">
                   한양대학교 ERICA <br className="lt-sm:hidden" /> 디자인테크놀로지전공
                   <br /> 학사
