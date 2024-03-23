@@ -1,5 +1,7 @@
 import { css } from '@emotion/react';
 import { PropsWithChildren } from 'react';
+import Github from '../../assets/svg/github.svg?react';
+import Link from '../../assets/svg/link.svg?react';
 import { ClassNameInterface } from '../../types/className';
 import { cn } from '../../utils/cn';
 
@@ -52,28 +54,34 @@ const Frame = ({
         },
       })}
     >
-      <div className={`frame h-100% h-40rem lt-sm:h-32rem bg-gray-100 rounded-4 mb-4`}>
+      <a
+        href={link}
+        target="_blank"
+        className={`block frame h-100% h-40rem lt-sm:h-32rem bg-gray-100 rounded-4 mb-4`}
+      >
         {children}
-      </div>
+      </a>
       <div className="px-4">
-        <h3 className="flex flex-col">
-          <span className="text-xl lt-sm:text-1rem">{category}</span>
-          <span className="text-2xl lt-sm:text-xl font-extrabold mb-2xl lt-sm:mb-xs">
-            {title}
-          </span>
-          <div className="flex gap-sm items-start mb-1.5">
-            <h6 className="text-sm w-3rem shrink-0">Link</h6>
-            <a href={link} target="_blank" className="text-sm lt-sm:text-xs break-all">
-              {link}
-            </a>
-          </div>
-          <div className="flex gap-sm items-start mb-2xl lt-sm:mb-xs">
-            <h6 className="text-sm w-3rem shrink-0">GitHub</h6>
-            <a href={github} target="_blank" className="text-sm lt-sm:text-xs break-all">
-              {github}
-            </a>
-          </div>
-        </h3>
+        <div className="flex justify-between items-center">
+          <h3 className="flex flex-col">
+            <span className="text-xl lt-sm:text-1rem">{category}</span>
+            <span className="text-2xl lt-sm:text-xl font-extrabold mb-2xl lt-sm:mb-xs">
+              {title}
+            </span>
+          </h3>
+          <ul className="flex gap-0.375rem items-center">
+            <li>
+              <a href={link} target="_blank" className="p-1.5 ">
+                <Link width="1rem" />
+              </a>
+            </li>
+            <li>
+              <a href={github} target="_blank" className="p-1.5 ">
+                <Github width="1rem" />
+              </a>
+            </li>
+          </ul>
+        </div>
         <dl className="lt-sm:opacity-100 group-hover:opacity-100 opacity-0 flex flex-col gap-xs text-sm lt-sm:text-xs mt-sm">
           {data.map(({ dt, dd }, i) => (
             <Detail key={i} dt={dt} dd={dd} />
