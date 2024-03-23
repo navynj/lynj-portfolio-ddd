@@ -69,7 +69,7 @@ const Information = ({ className }: ClassNameInterface) => {
               </ul>
             </li>
             <li>
-              <p className="text-sm lt-sm:text-xs font-extrabold">2020.6 ~ 2021. 3</p>
+              <p className="text-sm lt-sm:text-xs font-extrabold">2021.6 ~ 2022. 3</p>
               <h5 className="text-lg lt-sm:text-1rem font-extrabold mb-2">
                 (주) 모비젠 UI솔루션연구팀 인턴
               </h5>
