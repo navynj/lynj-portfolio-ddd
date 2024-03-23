@@ -13,23 +13,23 @@ const Information = ({ className }: ClassNameInterface) => {
             <div>
               <h5 className="mb-2 text-1rem font-extrabold">주로 활용</h5>
               <ul className="text-sm">
-                <li>Javascript, Typescript</li>
+                <li>HTML, CSS, Javascript & Typescript</li>
                 <li>React</li>
                 <li>Recoil, Jotai</li>
                 <li>TailwindCSS, Styled Component, Emotion</li>
                 <li>GitHub</li>
-                <li>(Figma)</li>
+                <li>Figma</li>
               </ul>
             </div>
             <div>
               <h5 className="mb-2 text-1rem font-extrabold">활용 경험 있음</h5>
               <ul className="text-sm">
                 <li>React Native, Next.js</li>
+                <li>Framer Motion, Three.js, R3F</li>
                 <li>Redux Toolkit</li>
                 <li>Python, Django, Flask</li>
                 <li>AngularJS</li>
-                <li>Three.js, R3F</li>
-                <li>(Blender, Rhino)</li>
+                <li>Blender, Rhino</li>
               </ul>
             </div>
           </div>
@@ -91,8 +91,8 @@ const Information = ({ className }: ClassNameInterface) => {
         {/* 학력 */}
         <div className="flex gap-40 lt-sm:flex-col lt-sm:gap-4">
           <h3 className="text-2xl font-extrabold shrink-0">학력</h3>
-          <ul className="flex flex-col lt-sm:gap-8">
-            <li className="flex gap-20 mb-10 lt-sm:flex-col lt-sm:gap-8">
+          <ul className="flex flex-col lt-sm:gap-4">
+            <li className="flex gap-20 mb-10 lt-sm:flex-col lt-sm:gap-4">
               <div>
                 <p className="text-sm lt-sm:text-xs font-extrabold">2018. 3 ~ 2021. 8</p>
                 <h4 className="text-lg lt-sm:text-1rem font-extrabold">
@@ -108,11 +108,11 @@ const Information = ({ className }: ClassNameInterface) => {
                   <ul className="list-disc pl-5">
                     <li className="mb-2">
                       <h6 className="text-1rem lt-sm:text-0.875rem">
-                        웹애플리케이션 개발
+                        웹 애플리케이션 개발
                       </h6>
                       <ul className="list-disc pl-8 text-sm">
                         <li>
-                          집중도 높은 영상 제작을 위한 영상 편집 웹애플리케이션 개발
+                          집중도 높은 영상 제작을 위한 영상 편집 웹 애플리케이션 개발
                           <br />
                           <strong>(Python, Flask, Redis)</strong>
                         </li>
@@ -161,11 +161,33 @@ const Information = ({ className }: ClassNameInterface) => {
               </ul>
             </li>
 
-            <li>
-              <p className="text-sm lt-sm:text-xs font-extrabold">2015. 3 ~ 2018. 2</p>
-              <h4 className="text-lg lt-sm:text-1rem font-extrabold">
-                고양국제고등학교 졸업
-              </h4>
+            <li className="flex gap-20 lt-sm:flex-col lt-sm:gap-4">
+              <div>
+                <p className="text-sm lt-sm:text-xs font-extrabold">2015. 3 ~ 2018. 2</p>
+                <h4 className="text-lg lt-sm:text-1rem font-extrabold">
+                  고양국제고등학교 졸업
+                </h4>
+              </div>
+              <ul className="list-disc pl-5">
+                <li className="mb-2">
+                  <h6 className="text-1rem lt-sm:text-0.875rem">동아리 활동</h6>
+                  <ul className="list-disc pl-8 text-sm">
+                    <li>
+                      (2017) 학술동아리 IT'st 운영 - 급식 메뉴 안내 웹페이지 '식사의 민족'
+                      개발
+                      <br /> <strong>(HTML, CSS, JQuery)</strong>
+                    </li>
+                  </ul>
+                </li>
+                <li className="mb-1">
+                  <h6 className="text-1rem lt-sm:text-0.875rem">봉사활동</h6>
+                  <ul className="list-disc pl-8 text-sm">
+                    <li>
+                      (2017.8) 정발신성지역아동센터 코딩멘토링 <strong>(Python)</strong>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
