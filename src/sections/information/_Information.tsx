@@ -112,7 +112,10 @@ const Information = ({ className }: ClassNameInterface) => {
                       </h6>
                       <ul className="list-disc pl-8 text-sm">
                         <li>
-                          집중도 높은 영상 제작을 위한 영상 편집 웹 애플리케이션 개발
+                          집중도 높은 영상 제작을 위한 영상 편집 웹 애플리케이션 개발{' '}
+                          <a href="https://github.com/navynj/vid-e" target="_blank">
+                            (GitHub)
+                          </a>
                           <br />
                           <strong>(Python, Flask, Redis)</strong>
                         </li>
