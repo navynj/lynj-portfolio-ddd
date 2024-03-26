@@ -16,10 +16,10 @@ const Portfolio = ({ className }: ClassNameInterface) => {
           data={[
             { dt: '개요', dd: ['예산 관리 시각화 가계부 서비스'] },
             { dt: '담당', dd: ['기획 / 디자인 / FE 개발'] },
-            { dt: '기술', dd: ['React / React-Native'] },
+            { dt: '기술', dd: ['React / Redux Toolkit / React-Native'] },
             {
               dt: '현황',
-              dd: ['주요 기능 개발 완료', '출시 전 서버 리팩토링 작업 진행중'],
+              dd: ['웹 배포 완료', '앱 출시 전 서버 리팩토링 작업 진행중'],
             },
           ]}
         ></Frame>
@@ -33,10 +33,21 @@ const Portfolio = ({ className }: ClassNameInterface) => {
           data={[
             { dt: '개요', dd: ['타이머 및 스케줄링 서비스'] },
             { dt: '담당', dd: ['기획 / 디자인 / FE 개발'] },
-            { dt: '기술', dd: ['React / Framer Motion'] },
+            { dt: '기술', dd: ['React / Framer Motion / Recoil'] },
             {
               dt: '현황',
-              dd: ['UI 인터랙션 프로토타입 제작'],
+              dd: [
+                <>
+                  <a
+                    href="https://github.com/plot-timer/plot-client/pull/46"
+                    target="_blank"
+                  >
+                    {'코드리뷰'}
+                  </a>
+                  {' 진행'}
+                </>,
+                'UI 인터랙션 프로토타입 제작',
+              ],
             },
           ]}
         ></Frame>
@@ -54,7 +65,7 @@ const Portfolio = ({ className }: ClassNameInterface) => {
               dt: '참고',
               dd: [
                 <>
-                  <a href="https://codesandbox.io/p/sandbox/shoe-configurator-qxjoj">
+                  <a href="https://codesandbox.io/p/sandbox/shoe-configurator-qxjoj" target="_blank">
                     예제
                   </a>
                   {' 참고 후 응용 구현'}
