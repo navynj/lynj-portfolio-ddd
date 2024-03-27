@@ -25,7 +25,7 @@ const Information = ({ className }: ClassNameInterface) => {
               <h5 className="mb-2 text-1rem font-extrabold">활용 경험 있음</h5>
               <ul className="text-sm">
                 <li>React Native, Next.js</li>
-                <li>Framer Motion, Three.js, R3F</li>
+                <li>Framer Motion, R3F</li>
                 <li>Redux Toolkit</li>
                 <li>Python, Django, Flask</li>
                 <li>AngularJS</li>
