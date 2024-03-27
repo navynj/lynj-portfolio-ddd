@@ -13,11 +13,11 @@ const Introduction = () => {
         <p>
           개인 프로젝트에서 난이도 있는 UI를 직접 기획하였으며, 개발 작업까지 실현해내어
           본인의 기획에 책임을 졌습니다. 대표적인 도전으로는 가계부 프로젝트에서의{' '}
-          <a href="#" target="_blank">
+          <a href="#skin" target="_blank">
             ‘동물 스킨을 입힌 링 모양 차트 애니메이션'
           </a>
           과 타이머 플래너 프로젝트에서의{' '}
-          <a href="#" target="_blank">
+          <a href="#time-block" target="_blank">
             ‘시간 슬라이드를 통해 계획과 실행을 비교할 수 있는 타임블록 토글 테이블'
           </a>
           이 있습니다.
@@ -38,7 +38,7 @@ const Introduction = () => {
         <p>
           개발 난이도가 있음에도 불구하고 사용자 경험을 위해 방안을 모색하고 실현해냈던
           경험으로는{' '}
-          <a href="#" target="_blank">
+          <a href="#overlay" target="_blank">
             ‘오버레이 닫기 경험 개선 과정'
           </a>
           이 있습니다.
@@ -53,11 +53,11 @@ const Introduction = () => {
           디테일을 포기하지 않았던 경험으로는 모서리 둥글리기 구현이 있습니다. 둥근
           모서리는 인지 부하를 덜어주며, 안정감을 전달합니다. 개인 프로젝트 중 개발에
           고려할 것이 많고 실현하기 어려웠음에도{' '}
-          <a href="#" target="_blank">
+          <a href="#ring-round" target="_blank">
             ‘링 차트의 시작점을 둥글리는 처리’
           </a>
           를 하였으며,{' '}
-          <a href="#" target="_blank">
+          <a href="#block-round" target="_blank">
             ‘조건 상세를 통한 토글되는 각각의 블록 모서리 둥글리기 작업'
           </a>
           을 해냈습니다.
