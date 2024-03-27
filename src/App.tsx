@@ -1,11 +1,12 @@
+import { Analytics } from '@vercel/analytics/react';
 import { useRef } from 'react';
 import Footer from './sections/footer/Footer';
 import Hero from './sections/hero/_Hero';
 import Information from './sections/information/_Information';
+import Introduction from './sections/introduction/_Introduction';
 import Nav from './sections/nav/Nav';
 import Portfolio from './sections/portfolio/_Portfolio';
 import './styles/global.css';
-import Introduction from './sections/introduction/_Introduction';
 
 function App() {
   const topRef = useRef<HTMLDivElement>(null);
@@ -34,6 +35,7 @@ function App() {
       >
         ↑TOP
       </button>
+      <Analytics />
     </>
   );
 }
