@@ -240,9 +240,15 @@ const Portfolio = ({ className }: ClassNameInterface) => {
               title: '색상 선택 시 모델 크기가 작아졌다 커지는 애니메이션 적용',
               content: (
                 <p>
-                  예제에 없는 인터랙션이지만 선택 과정 경험의 다이나믹을 더하기 위해여
-                  새롭게 추가하였습니다. @react-spring/three의 useSpring 훅을 활용하여
-                  선택 상태에 따라 scale이 조정되도록 구현하였습니다.
+                  <a
+                    href="https://codesandbox.io/p/sandbox/shoe-configurator-qxjoj"
+                    target="_blank"
+                  >
+                    예제
+                  </a>
+                  에 없는 인터랙션이지만 선택 과정 경험의 다이나믹을 더하기 위해여 새롭게
+                  추가하였습니다. @react-spring/three의 useSpring 훅을 활용하여 선택
+                  상태에 따라 scale이 조정되도록 구현하였습니다.
                 </p>
               ),
             },
