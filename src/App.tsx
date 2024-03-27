@@ -5,6 +5,7 @@ import Information from './sections/information/_Information';
 import Nav from './sections/nav/Nav';
 import Portfolio from './sections/portfolio/_Portfolio';
 import './styles/global.css';
+import Introduction from './sections/introduction/_Introduction';
 
 function App() {
   const topRef = useRef<HTMLDivElement>(null);
@@ -17,10 +18,11 @@ function App() {
       <div ref={topRef} className="absolute top-0" />
       <Nav />
       <div className="max-w-240 mx-auto px-2rem">
-        <main>
-          <Hero className="box-border mt-40 mb-80 lt-sm:mt-2 lt-sm:mb-48" />
-          <Portfolio className="mb-40 lt-sm:mb-48" />
-          <Information className="mb-80 lt-sm:mb-48" />
+        <main className="flex flex-col space-y-60 lt-sm:space-y-40 mb-80">
+          <Hero className="box-border lt-sm:mt-2 lt-sm:mb-12" />
+          <Introduction />
+          <Portfolio className="lt-sm:mb-48" />
+          <Information className="lt-sm:mb-48" />
         </main>
         <Footer />
       </div>
