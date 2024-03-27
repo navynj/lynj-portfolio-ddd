@@ -152,6 +152,11 @@ const Portfolio = ({ className }: ClassNameInterface) => {
               title: '스케줄 관리 타임블록 UI 인터랙션 구현',
               content: (
                 <>
+                  <img
+                    className="w-xs"
+                    src="/image/block.png"
+                    alt="중앙 회전 중심점 스킨 이미지"
+                  />
                   <p>
                     스케줄 화면에서 분을 나타내는 구분선과 타임블록이 겹치도록 각각을
                     감싸는 div 요소에 absolute 속성을 적용하였습니다. 블록을 클릭하여 시간
