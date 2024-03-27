@@ -140,7 +140,7 @@ const Portfolio = ({ className }: ClassNameInterface) => {
           link="https://plot-client.vercel.app"
           github="https://github.com/plot-timer/plot-client"
           bg="/image/plot.gif"
-          stack={['React', 'React Native', 'Redux Toolkit']}
+          stack={['React', 'Recoil', 'Framer Motion']}
           overview={[
             '할 일을 등록하고, 스케줄링하고, 할 일 별로 타이머를 동작시킬 수 있는 타이머 플래너 앱으로, 뮤직 플레이어 컨셉의 UI를 구성하였습니다.',
             '기획/디자인/프론트엔드 개발을 담당하였으며, 프론트엔드 팀원 1명, 서버 팀원 2명과 협업하였습니다.',
