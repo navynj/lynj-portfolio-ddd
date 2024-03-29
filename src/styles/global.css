@@ -4,9 +4,9 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* color: #313338; */
   margin: 0;
   padding: 0;
+  color: #313338;
 }
 
 ul,
@@ -26,4 +26,8 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+a {
+  color: #0000EE
 }
